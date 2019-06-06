@@ -8,8 +8,10 @@ edition = "2018"
 crate-type = ["staticlib"]
 
 [dependencies]
-ev3rt = "0.1.0"
-ev3 = "0.1.0"
+ev3rt = { path = "../ev3rt-rs" }
+ev3 = { path = "../ev3-rs" }
+#ev3rt = "0.1.0"
+#ev3 = "0.1.0"
 
 [profile.dev]
 panic = "abort"
