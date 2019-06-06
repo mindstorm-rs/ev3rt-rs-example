@@ -1,0 +1,18 @@
+[package]
+name = "ev3rs-rs-example"
+version = "0.1.0"
+authors = ["Massimiliano Mantione <massimiliano.mantione@gmail.com>"]
+edition = "2018"
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+ev3rt = "0.1.0"
+ev3 = "0.1.0"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
