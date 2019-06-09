@@ -23,7 +23,7 @@ fn init(ev3: &mut Ev3) {
 }
 
 #[no_mangle]
-pub extern "C" fn main_task() -> () {
+pub extern "C" fn main_task() {
     let mut ev3 = Ev3::new();
     init(&mut ev3);
 
